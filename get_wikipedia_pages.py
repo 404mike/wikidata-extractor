@@ -1,12 +1,14 @@
-from glob import glob
-import json,urllib.request
 import time
 import urllib
+import os.path
+import json,urllib.request
+from glob import glob
 from wikitextparser import remove_markup, parse
 
 def main():
   files = get_all_json_files()
-  parse_json_file(files)
+  number_of_items = get_number_of_items(files)
+  parse_json_file(files,number_of_items)
   
 def get_all_json_files():
   '''Loop through all the JSON files in ./wikidata '''
@@ -16,42 +18,69 @@ def get_all_json_files():
       jsonlst.append(json.load(f))
   return jsonlst
 
-def parse_json_file(files):
+def get_number_of_items(files):
+  '''Get number of items in all the JSON files
+  '''
+  items = 0
+  for json_obj in files:
+    for item in json_obj:
+      items += 1
+  return items
+
+def parse_json_file(files,number_of_items):
   '''Parse JSON file
     Loop through all the records in this JSON file
     Then parse out the contents of each record in parse_json_obj()
   '''
+  number_of_loops = 0
   for json_obj in files:
     for item in json_obj:
+      number_of_loops += 1 
+
+      print("Getting item {} out of {}".format(number_of_loops, number_of_items))     
       parse_json_obj(item)
+      print("")
 
 def parse_json_obj(item):
   '''Extract data from JSON
   '''
+
+  # extract data from JSON object
   wiki_id = item["wiki_id"]
   itemLabel = item["itemLabel"]
   itemDescription = item["itemDescription"]
   wikipedia_url = item["wikipedia_url"]
 
-  # temp - just testing on a single record
-  if wiki_id == "http://www.wikidata.org/entity/Q6450928":
-    # print(itemLabel)
-    wikipedia_page = get_wikipedia_page(wikipedia_url, itemLabel)
-    print(wikipedia_page)
-  # print(wiki_id)
-  # print("Waiting 3 seconds")
-  # time.sleep(3)
+  # create new filename
+  filename = wiki_id.replace('http://www.wikidata.org/entity/','')
 
+  print("Checking {}".format(wiki_id))
+  # Check to see if we already have downloaded this file
+  if not os.path.isfile("wikipedia/{}.json".format(filename)):
+
+    # temp - just testing on a single record
+    # if wiki_id == "http://www.wikidata.org/entity/Q6450928":
+    
+    # Get main wikipedia page and all pages that link to that page
+    wikipedia_page = get_wikipedia_page(wikipedia_url, itemLabel)
+
+    # Object of all the data
     person = {"wiki_id": wiki_id, "itemLabel": itemLabel,
               "itemDescription": itemDescription, "wikipedia_url": wikipedia_url,
               "wikipedia_page": wikipedia_page}
     
-    final_print("person", person)
-    exit()
+    # create JSON file
+    final_print(filename, person)
+    
+    # Pause so that we don't get throttled by the API
+    print("Waiting 3 seconds")
+    time.sleep(3)
 
 def get_wikipedia_page(wikipedia_url, itemLabel):
   '''Get the summary of the main Wikipedia page for this person
   '''
+
+  print("Getting main Wikipedia page for {}".format(itemLabel))
 
   # format Wikipedia URL
   wikipedia_url = wikipedia_url.replace('https://en.wikipedia.org/wiki/','')
@@ -84,6 +113,9 @@ def get_wikipedia_page(wikipedia_url, itemLabel):
 def get_pages_linking_to_page(wikipedia_url, itemLabel):
   '''Get a list of pages that link to the main article of ther person
   '''
+
+  print("Getting page that links to page main article for {}".format(itemLabel))
+
   # save all mentions to the person we're looking for
   link_mentions = []
 
@@ -95,7 +127,7 @@ def get_pages_linking_to_page(wikipedia_url, itemLabel):
   output = json.loads(data)
 
   # list of page types to ignore
-  ignore_pages = ["Talk:","User talk:", "Wikipedia:", "User:"]
+  ignore_pages = ["Talk:","User talk:", "Wikipedia:", "User:", "Portal:"]
   # loop through each of the page links
   for links in output["query"]["backlinks"]:
     link = links["title"]
@@ -113,6 +145,9 @@ def parse_data_from_wiki_link_page(wikipedia_url, itemLabel):
   ''' Get a paragraph, that contains the name of the person
       we're looking for from a page that links to the main article
   '''
+
+  print("\tPage: {}".format(wikipedia_url))
+
   # make the URL safe
   wikipedia_url = urllib.parse.quote_plus(wikipedia_url)
 
@@ -147,7 +182,7 @@ def final_print(filename, data):
   ''' Print data to JSON file
   '''
   jsonString = json.dumps(data)
-  jsonFile = open("wikipedia/{}.json".format(str(filename)), "w")
+  jsonFile = open("wikipedia/{}.json".format(filename), "w")
   jsonFile.write(jsonString)
   jsonFile.close()
   print("Written {}.json".format(str(filename)))
