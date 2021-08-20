@@ -37,7 +37,9 @@ def parse_json_file(files,number_of_items):
     for item in json_obj:
       number_of_loops += 1 
 
-      print("Getting item {} out of {}".format(number_of_loops, number_of_items))     
+      percent_remaining = (int(number_of_loops) / int(number_of_items)) * 100
+      percent_remaining = round(percent_remaining, 3)
+      print("Getting item {} out of {} - {}%".format(number_of_loops, number_of_items, percent_remaining))     
       parse_json_obj(item)
       print("")
 
@@ -73,8 +75,8 @@ def parse_json_obj(item):
     final_print(filename, person)
     
     # Pause so that we don't get throttled by the API
-    print("Waiting 3 seconds")
-    time.sleep(3)
+    print("Waiting 1 second")
+    time.sleep(1)
 
 def get_wikipedia_page(wikipedia_url, itemLabel):
   '''Get the summary of the main Wikipedia page for this person
@@ -106,7 +108,8 @@ def get_wikipedia_page(wikipedia_url, itemLabel):
     main_wiki_extract = ""
 
   # get pages that link to the main article for this person
-  link_mentions = get_pages_linking_to_page(wikipedia_url, itemLabel)
+  # link_mentions = get_pages_linking_to_page(wikipedia_url, itemLabel)
+  link_mentions = {}
 
   return {"main": main_wiki_extract, "link_mentions": link_mentions}
 
@@ -127,7 +130,9 @@ def get_pages_linking_to_page(wikipedia_url, itemLabel):
   output = json.loads(data)
 
   # list of page types to ignore
-  ignore_pages = ["Talk:","User talk:", "Wikipedia:", "User:", "Portal:"]
+  ignore_pages = ["Talk:","User talk:", "Wikipedia:", "User:", "Portal:", 
+                  "File:", "Category:", "Wikipedia talk:", "Template:",
+                  "Draft:"]
   # loop through each of the page links
   for links in output["query"]["backlinks"]:
     link = links["title"]
