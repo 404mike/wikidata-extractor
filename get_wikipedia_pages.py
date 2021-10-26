@@ -1,9 +1,16 @@
 import time
 import urllib
 import os.path
-import json,urllib.request
+import json
 from glob import glob
 from wikitextparser import remove_markup, parse
+from urllib import request as urlrequest
+
+import os
+proxy_host = 'cache.llgc.org.uk:80'
+os.environ['HTTP_PROXY'] = proxy_host
+os.environ['HTTPS_PROXY'] = proxy_host
+
 
 def main():
   files = get_all_json_files()
@@ -50,7 +57,14 @@ def parse_json_obj(item):
   # extract data from JSON object
   wiki_id = item["wiki_id"]
   itemLabel = item["itemLabel"]
-  itemDescription = item["itemDescription"]
+
+  print(item)
+  exit()
+  if "itemDescription" in item:
+    itemDescription = item["itemDescription"]
+  else:
+    itemDescription = ''
+
   wikipedia_url = item["wikipedia_url"]
 
   # create new filename
@@ -95,7 +109,13 @@ def get_wikipedia_page(wikipedia_url, itemLabel):
   wikipedia_api_url = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=" + wikipedia_url
 
   # API rrequest
-  data = urllib.request.urlopen(wikipedia_api_url).read()
+  req = urlrequest.Request(wikipedia_api_url)
+  req.set_proxy(proxy_host, 'https')
+
+  response = urlrequest.urlopen(req)
+  data = response.read().decode('utf8')
+  # exit()
+
   output = json.loads(data)
 
   # get wikipedia ID 
@@ -108,8 +128,8 @@ def get_wikipedia_page(wikipedia_url, itemLabel):
     main_wiki_extract = ""
 
   # get pages that link to the main article for this person
-  # link_mentions = get_pages_linking_to_page(wikipedia_url, itemLabel)
-  link_mentions = {}
+  link_mentions = get_pages_linking_to_page(wikipedia_url, itemLabel)
+  # link_mentions = {}
 
   return {"main": main_wiki_extract, "link_mentions": link_mentions}
 

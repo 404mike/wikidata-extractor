@@ -4,6 +4,11 @@ import json
 import os.path
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+import os
+proxy_host = 'cache.llgc.org.uk:80'
+os.environ['HTTP_PROXY'] = proxy_host
+os.environ['HTTPS_PROXY'] = proxy_host
+
 # WIKIDATA API endpoint
 endpoint_url = "https://query.wikidata.org/sparql"
 
