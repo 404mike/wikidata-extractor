@@ -46,6 +46,7 @@ def parse_json_obj(item):
   # extract data from JSON object
   wiki_id = item["item"]
   itemLabel = item["itemLabel"]
+  
   if "itemDescription" in item:
     itemDescription = item["itemDescription"]
   else:
