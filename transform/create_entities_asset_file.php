@@ -4,6 +4,16 @@ class CreateEntitiesAssetFile {
 
   private $people = [];
 
+  /**
+   * Path of where to look for Wiki data
+   */
+  private $wikiDirPath = 'wikipedia';
+
+  /**
+   * Name of the CSV file that gets output
+   */
+  private $outputFileName = 'all_wikipedia.csv';
+
   public function __construct()
   {
     $this->loopWikipediaFiles();
@@ -17,7 +27,7 @@ class CreateEntitiesAssetFile {
    */
   private function loopWikipediaFiles()
   {
-    $files = glob('../wikipedia/*.{json}', GLOB_BRACE);
+    $files = glob('../'.$this->wikiDirPath.'/*.{json}', GLOB_BRACE);
     foreach($files as $file) {
       $this->readWikiPage($file);
     }
@@ -58,7 +68,7 @@ class CreateEntitiesAssetFile {
       $list[] = $v;
     }
 
-    $fp = fopen('entities_large.csv', 'w');
+    $fp = fopen($this->outputFileName, 'w');
 
     foreach ($list as $fields) {
       fputcsv($fp, $fields);

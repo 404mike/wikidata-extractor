@@ -1,8 +1,16 @@
 <?php
+ini_set("memory_limit", "-1");
+set_time_limit(0);
 
 class CreateJsonlAssetFile {
 
   private $jsonl = [];
+
+  /**
+   * Path of where to look for Wiki data
+   */
+  private $wikiDirPath = 'wikipedia';
+
 
   public function __construct()
   {
@@ -17,7 +25,7 @@ class CreateJsonlAssetFile {
    */
   private function loopWikipediaFiles()
   {
-    $files = glob('../wikipedia/*.{json}', GLOB_BRACE);
+    $files = glob('../'.$this->wikiDirPath.'/*.{json}', GLOB_BRACE);
     foreach($files as $file) {
       $this->readWikiPage($file);
     }
@@ -35,7 +43,11 @@ class CreateJsonlAssetFile {
     $person = $data['itemLabel'];
     $qid = str_replace('http://www.wikidata.org/entity/','',$data['wiki_id']);
 
+    if(!isset($data['wikipedia_page']['main'])) return;
+
     $this->parseMainWikipediaArticle($data['wikipedia_page']['main'], $person, $qid);
+
+    $this->parseLinkedWikipediaArctiles($data['wikipedia_page']['link_mentions'], $person, $qid);
   }
 
   private function parseMainWikipediaArticle($str, $person, $qid)
@@ -47,9 +59,19 @@ class CreateJsonlAssetFile {
     $this->createJsonStr($str, $pos, $qid, $person);
   }
 
-  private function parseLinkedWikipediaArctiles()
+  private function parseLinkedWikipediaArctiles($wikipages, $person, $qid)
   {
+    foreach ($wikipages as $key => $value) {
+      $str = $value['response'][0];
+      if(strlen($str) < 40) continue;
+      
+      $pos = $this->findPersonInText($str, $person);
 
+      if(empty($pos)) return;
+
+      $this->createJsonStr($str, $pos, $qid, $person);
+    }
+    // die();
   }
 
   private function createJsonStr($str, $pos, $qid, $person)
