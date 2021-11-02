@@ -15,7 +15,7 @@ os.environ['HTTPS_PROXY'] = proxy_host
 def main():
 
   files = []
-  with open('query.json', encoding='utf-8') as data_file:    
+  with open('wikidata_people_wales.json', encoding='utf-8') as data_file:    
     data = json.load(data_file)
     # print(data)
     for v in data:
