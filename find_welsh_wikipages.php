@@ -21,9 +21,9 @@ class FindWelshWiki {
   private function copyWikiPages($qid)
   {
     $json = file_get_contents("wikipedia/$qid.json");
-    echo $json;
-    die();
-    if(!copy("wikipedia/$qid.json","wales_wiki_pages/$qid")) {
+    // echo $json;
+    // die();
+    if(!copy("wikipedia/$qid.json","wales_wiki_pages/$qid.json")) {
       die("can't move file\n");
     }
   }
