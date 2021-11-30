@@ -9,7 +9,7 @@ class CreateJsonlAssetFile {
   /**
    * Path of where to look for Wiki data
    */
-  private $wikiDirPath = 'wikipedia';
+  private $wikiDirPath = 'wales_wiki_pages';
 
 
   public function __construct()
@@ -52,6 +52,13 @@ class CreateJsonlAssetFile {
 
   private function parseMainWikipediaArticle($str, $person, $qid)
   {
+    // clean string format
+    $str = utf8_decode($str);
+
+    // clean name in string
+    $str = $this->cleanNameInString($str, $person);
+    
+    // get name position
     $pos = $this->findPersonInText($str, $person);
     
     if(empty($pos)) return;
@@ -63,8 +70,14 @@ class CreateJsonlAssetFile {
   {
     foreach ($wikipages as $key => $value) {
       $str = $value['response'][0];
+      // clean string format
+      $str = utf8_decode($str);
       if(strlen($str) < 40) continue;
+
+      // clean name in string
+      $str = $this->cleanNameInString($str, $person);
       
+      // get name position
       $pos = $this->findPersonInText($str, $person);
 
       if(empty($pos)) return;
@@ -109,6 +122,7 @@ class CreateJsonlAssetFile {
 
   private function findPersonInText($str, $person)
   {
+
     preg_match_all('/'.$person.'/', $str, $match, PREG_OFFSET_CAPTURE);
 
     // TODO: what about variations, such as first name only
@@ -136,6 +150,46 @@ class CreateJsonlAssetFile {
     return $res;
   }
   
+  /**
+   * Clean name in string
+   * if the name we're looking for has extra characters, add a space
+   * eg: 4Bob Jones - 4 Bob Jones
+   */
+  private function cleanNameInString($str, $name)
+  {
+    // regex to get name
+    preg_match_all('/(.?)' . $name . '(.?)/', $str, $output_array);
+
+    // get start part of regex
+    $beginStrChar = $output_array[1][0];
+    // get end part of regex
+    $endStrChar = $output_array[2][0];
+
+    // loop all the names found in the string
+    foreach($output_array[0] as $nameInstanceKey => $nameInstanceVal) {
+
+      // reference for name
+      $issue = $output_array[0][0];
+      $newFormat = $issue;
+
+      // if no space at begining or empty
+      if(!ctype_space($beginStrChar) && !empty($beginStrChar)) {
+        // add a space after first char
+        $newFormat = substr_replace($issue, ' ', 1, 0);
+      }
+
+      // if no space at end or empty
+      if(!ctype_space($endStrChar) && !empty($endStrChar)) {
+        // add a space before last char
+        $newFormat = substr_replace($newFormat, ' ', -1, 0);
+      }
+
+      // replace the string
+      $str = str_replace($issue, $newFormat, $str);
+    }
+
+    return $str;
+  }
 
   private function randomNumber($length) {
     $result = '';
@@ -151,7 +205,8 @@ class CreateJsonlAssetFile {
   private function outputData()
   {
     foreach($this->jsonl as $k => $v){
-      echo "$v\n";
+      if(!empty($v))
+        echo "$v\n";
     }
   }
 }
