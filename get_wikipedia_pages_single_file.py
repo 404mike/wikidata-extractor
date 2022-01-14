@@ -4,18 +4,19 @@ import os.path
 import json
 from glob import glob
 from wikitextparser import remove_markup, parse
-from urllib import request as urlrequest
+# from urllib import request as urlrequest
+import urllib.request
 
 import os
-proxy_host = 'cache.llgc.org.uk:80'
-os.environ['HTTP_PROXY'] = proxy_host
-os.environ['HTTPS_PROXY'] = proxy_host
+# proxy_host = 'cache.llgc.org.uk:80'
+# os.environ['HTTP_PROXY'] = proxy_host
+# os.environ['HTTPS_PROXY'] = proxy_host
 
 
 def main():
 
   files = []
-  with open('wikidata_people/wikidata_people_wales.json', encoding='utf-8') as data_file:    
+  with open('wikidata_people/wikidata_people_uk.json', encoding='utf-8') as data_file:    
     data = json.load(data_file)
     # print(data)
     for v in data:
@@ -87,6 +88,7 @@ def get_wikipedia_page(wikipedia_url, itemLabel):
   '''
 
   print("Getting main Wikipedia page for {}".format(itemLabel))
+  # print(wikipedia_url)
 
   # format Wikipedia URL
   wikipedia_url = wikipedia_url.replace('https://en.wikipedia.org/wiki/','')
@@ -99,11 +101,12 @@ def get_wikipedia_page(wikipedia_url, itemLabel):
   wikipedia_api_url = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=" + wikipedia_url
 
   # API rrequest
-  req = urlrequest.Request(wikipedia_api_url)
-  req.set_proxy(proxy_host, 'https')
+  # req = urlrequest.Request(wikipedia_api_url)
+  # req.set_proxy(proxy_host, 'https')
 
-  response = urlrequest.urlopen(req)
-  data = response.read().decode('utf8')
+  # response = urlrequest.urlopen(req)
+  # data = response.read().decode('utf8')
+  data = request_url_content(wikipedia_api_url)
   # exit()
 
   output = json.loads(data)
@@ -195,6 +198,13 @@ def parse_data_from_wiki_link_page(wikipedia_url, itemLabel):
         p.append(line)
 
   return p
+
+def request_url_content(url):
+  ''' Get contet from URL
+  '''
+
+  data = urllib.request.urlopen(url)
+  return data.read().decode('utf8')
 
 def final_print(filename, data):
   ''' Print data to JSON file
