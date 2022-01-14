@@ -12,7 +12,7 @@ class CreateEntitiesAssetFile {
   /**
    * Name of the CSV file that gets output
    */
-  private $outputFileName = 'all_wikipedia.csv';
+  private $outputFileName = '../assets/all_wikipedia.csv';
 
   public function __construct()
   {
