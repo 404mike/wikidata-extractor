@@ -1,0 +1,1981 @@
+{
+    "head": {
+        "vars": [
+            "item",
+            "itemLabel",
+            "itemDescription",
+            "article"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17364329"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Victor Gardener"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British actor"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17364427"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ella Clark"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British basketball player"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Ella_Clark"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17364581"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Stephanie Gandy"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British basketball player"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Stephanie_Gandy"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17364596"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Georgia Jones"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British basketball player"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Georgia_Jones"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17364632"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Stuart John Parker"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British association football player (born 1954)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17370720"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Alistair Hanna"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Alistair_Hanna"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17372491"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Thomas Anstey Guthrie"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "father of Thomas Anstey Guthrie"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17374188"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Claire Tran"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "French actor and dancer"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17379325"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Peter Thorne"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "RAF officer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Peter_Thorne_(RAF_officer)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17379873"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jamie Douglas-Home"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British racehorse trainer and journalist (1952-2014)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17381535"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Simon Burnell"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British golfer"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17382152"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Neil Reid"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Scottish singer; child singing star"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Neil_Reid"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385517"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Matthew Howson"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British racing driver for KCMG in the World Endurance Championship 2014-2015"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Matthew_Howson"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385571"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Andrew Miller"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British manager, born 1966"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Andrew_Miller_(executive)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385575"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ange Hardy"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British singer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Ange_Hardy"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385577"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ann Phoenix"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British educationist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Ann_Phoenix"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385590"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Sarah Archer"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British model"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Sarah_Archer_(model)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385608"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jennifer Bailey"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British acrobatic gymnast"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Jennifer_Bailey"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385639"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Benjamin Sullivan"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "English artist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Benjamin_Sullivan_(artist)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385640"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jonathan Bennett"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "mathematician"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Jonathan_Bennett_(mathematician)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385668"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Kid Bookie"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British musician"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Kid_Bookie"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385682"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Brian Kennedy"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British businessman"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Brian_Kennedy_(businessman)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385692"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "W.B. Brydon"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British actor"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/W.B._Brydon"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385722"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Robert Cassen"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British economist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Robert_Cassen"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385736"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Charlotte Roberts"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bioarchaeologist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Charlotte_Roberts"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385741"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Chaudhry Faisal Mushtaq"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "educationist, social entrepreneur"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Faisal_Mushtaq"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385782"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Greg Cork"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "cricketer (born 1994)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Greg_Cork"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385812"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Meggan Dawson-Farrell"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British wheelchair racer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Meggan_Dawson-Farrell"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385828"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jeff Dexter"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British DJ"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Jeff_Dexter"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385854"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Michael James"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British composer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Michael_James_Down"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385855"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Andy Driscoll"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1971)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Andy_Driscoll"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385860"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Peter Dubens"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British businessman"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Peter_Dubens"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385876"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Mark Eggleston"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "English cricket umpire (born 1963)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Mark_Eggleston"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385882"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Umit Eminoglu"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "association football player (born 1994)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Umit_Eminoglu"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385900"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Evelyn Ebsworth"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British chemist and academic"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Evelyn_Ebsworth"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385911"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Will Farquarson"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British musician"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Will_Farquarson"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385915"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Massimo Fenati"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "cartoonist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Massimo_Fenati"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385929"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Francesco Billari"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British sociologist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Francesco_Billari"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385941"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Yiannis Gabriel"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British sociologist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Yiannis_Gabriel"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385945"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ross Gardler"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British open source advocate"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Ross_Gardler"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385977"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Henry Globe"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "judge"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Henry_Globe"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385981"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jonathan Goodall"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bishop of Ebbsfleet"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Jonathan_Goodall"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17385984"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bryony Gordon"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British newspaper journalist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Bryony_Gordon"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386012"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ryan Hampshire"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "English rugby league footballer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Ryan_Hampshire"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386017"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Kevin Harding"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1957)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Kevin_Harding"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386044"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Darren Hill"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British association football player (born 1981)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Darren_Hill_(footballer)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386049"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Sue Hines"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Children's author"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Sue_Hines"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386056"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Alisdair Hogarth"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "pianist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Alisdair_Hogarth"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386062"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "John Howell"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British long jumper"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/John_Howell_(athlete)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386060"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jeremy Houghton"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British artist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Jeremy_Houghton"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386061"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Matthew Howard"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1970)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Matthew_Howard_(footballer)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386085"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Cicely Irwin"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British acrobatic gymnast"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Cicely_Irwin"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386095"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Campbell Jackson"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British darts player"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Campbell_Jackson"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386116"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jerry White"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British historian"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Jerry_White_(historian)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386126"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Charline Joiner"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Scottish racing cyclist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Charline_Jones"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386134"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Judith Lieu"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Professor of Divinity"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Judith_Lieu"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386138"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "John Junkin"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British politician (born 1949)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/John_Junkin_(politician)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386146"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Chester Kamen"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British guitarist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Chester_Kamen"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386163"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Keeno"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "English DJ and Drum and Bass producer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Keeno"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386191"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Teresa Freeman-Grenville, 13th Lady Kinloss"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Scottish peer (born 1957)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Teresa_Freeman-Grenville,_13th_Lady_Kinloss"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386232"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Georgia Lancaster"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British gymnast"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Georgia_Lancaster"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386259"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Lindsay Stringer"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Professor in Environment and Development"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Lindsay_Stringer"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386261"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Zania Linton"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "model"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Zania_Linton"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386284"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Catherine Lyons"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British gymnast"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Catherine_Lyons"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386328"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Richard Nelson Coe"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British university teacher (1923-1987)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386346"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Elise Matthews"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British gymnast"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Elise_Matthews"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386349"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Peter Maxey"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British diplomat"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Peter_Maxey"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386361"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Patrick Meade, 8th Earl of Clanwilliam"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Irish earl"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Patrick_Meade,_8th_Earl_of_Clanwilliam"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386422"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ian Moss"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British darts player"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Ian_Moss_(darts_player)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386450"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bradley Neil"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Amateur golfer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Bradley_Neil"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386455"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Paul Newbold"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British economist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Paul_Newbold"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386497"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Maurice Samuel Ostro"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British philanthropist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Maurice_Samuel_Ostro"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386566"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Richard Poole"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1957)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Richard_Poole_(footballer)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386578"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Gerwyn Price"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Welsh professional darts player"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Gerwyn_Price"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386606"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Dixie Peach"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "radio personality"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Dixie_Peach"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386615"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Catherine Rayner"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British children's illustrator and writer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Catherine_Rayner"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386651"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Graham Cox"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1959)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Graham_Cox_(footballer,_born_1959)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386655"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Stuart Crawford"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Scottish squash player"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Stuart_Crawford"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386653"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Steve Crabb"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Australian politician"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Steve_Crabb"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17386661"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Neisha Crosland"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British textile designer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Neisha_Crosland"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388167"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Alfred Bennett Bamford"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "painter"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Alfred_Bennett_Bamford"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388182"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Alick Bevan"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British cyclist (1915-1945)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Alick_Bevan"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388225"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Stanley Butler"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "cyclist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Stanley_Butler"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388306"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "A. E. Dingle"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Sailor and writer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Captain_Dingle"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388331"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Frederick Edward-Collins"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Royal Navy sailor (1883-1958)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Frederick_Edward-Collins"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388395"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Kenny Graham"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British musician"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Kenny_Graham"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388450"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ray Hicks"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "cyclist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Ray_Hicks_(cyclist)"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388499"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "S. D. Jouhar"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "photographer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/S._D._Jouhar"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388534"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Nick Lashley"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British record producer and songwriter"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Nick_Lashley"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388537"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Tom Leamore"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British singer-songwriter"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Tom_Leamore"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388578"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Jimmy McCree"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Scottish footballer (1902-1984)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Jimmy_McCree"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388583"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bill Messer"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "cyclist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Bill_Messer"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388684"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Eileen Roe"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Scottish racing cyclist"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Eileen_Roe"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388688"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Gary Rolph"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1960)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Gary_Rolph"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388716"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Samuel Agar Salvage"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British businessman"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Samuel_Agar_Salvage"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388774"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Matthew Snelling"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "English miniature painter"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Matthew_Snelling"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388787"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Tony Spencer"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1965)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Tony_Spencer"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388785"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Nick Southwood"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "British songwriter and record producer"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Nick_Southwood"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388789"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Billy Stagg"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1957)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Billy_Stagg"
+                }
+            },
+            {
+                "item": {
+                    "type": "uri",
+                    "value": "http:\/\/www.wikidata.org\/entity\/Q17388818"
+                },
+                "itemLabel": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Kevin Teer"
+                },
+                "itemDescription": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Footballer (born 1963)"
+                },
+                "article": {
+                    "type": "uri",
+                    "value": "https:\/\/en.wikipedia.org\/wiki\/Kevin_Teer"
+                }
+            }
+        ]
+    }
+}
