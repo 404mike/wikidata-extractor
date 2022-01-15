@@ -41,10 +41,11 @@ class LoopData {
         }
     }
 
-    private function query($offset)
+    private function query($offset, $retry=false)
     {  
-
-        if($offset != 0) $offset = $offset . '00';
+        if(!$retry) {
+            if($offset != 0) $offset = $offset . '00';
+        }        
 
         echo "Trying offset $offset\n";
         if(file_exists("json/$offset.json")) return;
@@ -67,18 +68,34 @@ class LoopData {
         OFFSET {$OFFSET}
         SPARQL;
 
-        $sparqlQueryString = str_replace('{$OFFSET}',$offset,$sparqlQueryString);
+        
         // echo $sparqlQueryString;
         // echo "\n";
         // die();
+
+        try {
+            $this->executeScript($offset,$sparqlQueryString,$endpointUrl);
+        } catch (\Throwable $th) {
+            //throw $th;
+            echo "Error waiting 100 seconds\n";
+            sleep(100);
+            $this->query($offset,true);
+        }
+
+        // var_export($queryResult);
+
+        // die();
+    }
+
+    private function executeScript($offset,$sparqlQueryString,$endpointUrl)
+    {
+        $sparqlQueryString = str_replace('{$OFFSET}',$offset,$sparqlQueryString);
 
         $queryDispatcher = new SPARQLQueryDispatcher($endpointUrl);
         $queryResult = $queryDispatcher->query($sparqlQueryString);
 
         file_put_contents("json/$offset.json",json_encode($queryResult,JSON_PRETTY_PRINT));
-        // var_export($queryResult);
-
-        // die();
+        sleep(2);
     }
 }
 

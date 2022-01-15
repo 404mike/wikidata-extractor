@@ -23,6 +23,13 @@ class MergeJson {
   {
     $json = file_get_contents($file);
     $data = json_decode($json,true);
+
+    if(!isset($data['results']['bindings'])) {
+
+      echo $file;
+      print_r($data);
+      die();
+    }
     
     foreach($data['results']['bindings'] as $k => $v) {
       // print_r($v);die();
