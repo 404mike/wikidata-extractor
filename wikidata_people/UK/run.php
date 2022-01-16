@@ -24,7 +24,7 @@ class SPARQLQueryDispatcher
         $context = stream_context_create($opts);
 
         $url = $this->endpointUrl . '?query=' . urlencode($sparqlQuery);
-        $response = file_get_contents($url, false, $context);
+        $response = @file_get_contents($url, false, $context);
         return json_decode($response, true);
     }
 }
@@ -77,7 +77,7 @@ class LoopData {
             $this->executeScript($offset,$sparqlQueryString,$endpointUrl);
         } catch (\Throwable $th) {
             //throw $th;
-            echo "Error waiting 100 seconds\n";
+            echo "Error getting $offset - waiting 100 seconds\n";
             sleep(100);
             $this->query($offset,true);
         }
