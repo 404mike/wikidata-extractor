@@ -77,8 +77,8 @@ class LoopData {
             $this->executeScript($offset,$sparqlQueryString,$endpointUrl);
         } catch (\Throwable $th) {
             //throw $th;
-            echo "Error getting $offset - waiting 100 seconds\n";
-            sleep(100);
+            echo "Error getting $offset - waiting 40 seconds\n";
+            sleep(40);
             $this->query($offset,true);
         }
 
@@ -95,6 +95,7 @@ class LoopData {
         $queryResult = $queryDispatcher->query($sparqlQueryString);
 
         file_put_contents("json/$offset.json",json_encode($queryResult,JSON_PRETTY_PRINT));
+        echo "Successfully written $offset.json\n";
         sleep(2);
     }
 }
