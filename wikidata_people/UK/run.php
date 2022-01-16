@@ -77,8 +77,9 @@ class LoopData {
             $this->executeScript($offset,$sparqlQueryString,$endpointUrl);
         } catch (\Throwable $th) {
             //throw $th;
-            echo "Error getting $offset - waiting 40 seconds\n";
-            sleep(40);
+            $sleep = 20;
+            echo "Error getting $offset - waiting $sleep seconds\n";
+            sleep($sleep);
             $this->query($offset,true);
         }
 
