@@ -149,7 +149,7 @@ class LoopData {
             $this->executeScript($offset,$sparqlQueryString,$endpointUrl);
         } catch (\Throwable $th) {
             //throw $th;
-            $sleep = 20;
+            $sleep = 30;
             // $message = "Error getting $offset - waiting $sleep seconds\n";
             
             echo $this->colors->getColoredString("Error", "light_gray", "red") . " getting $offset - waiting $sleep seconds\n";;
