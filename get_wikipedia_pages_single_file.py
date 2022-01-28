@@ -6,6 +6,7 @@ from glob import glob
 from wikitextparser import remove_markup, parse
 # from urllib import request as urlrequest
 import urllib.request
+import random
 
 import os
 proxy_host = 'cache.llgc.org.uk:80'
@@ -21,6 +22,7 @@ def main():
     # print(data)
     for v in data:
         files.append(v)
+  # random.shuffle(files)
   parse_json_file(files, len(files))
 
 
