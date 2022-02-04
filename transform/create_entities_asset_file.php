@@ -1,4 +1,6 @@
 <?php
+ini_set("memory_limit", "-1");
+set_time_limit(0);
 
 class CreateEntitiesAssetFile {
 
@@ -12,7 +14,7 @@ class CreateEntitiesAssetFile {
   /**
    * Name of the CSV file that gets output
    */
-  private $outputFileName = '../assets/all_wikipedia.csv';
+  private $outputFileName = '../assets/uk_entities.csv';
 
   public function __construct()
   {

@@ -5,18 +5,25 @@ set_time_limit(0);
 class CreateJsonlAssetFile {
 
   private $jsonl = [];
+  private $peopleWithNoData = 0;
+  private $unusableText = 0;
+  private $usableData = 0;
+  private $resultsFile = 'uk_data.json';
 
   /**
    * Path of where to look for Wiki data
    */
-  private $wikiDirPath = 'wales_wiki_pages';
+  private $wikiDirPath = 'wikipedia';
 
 
   public function __construct()
   {
     $this->loopWikipediaFiles();
 
-    $this->outputData();
+    // echo "output data\n";
+    // $this->outputData();
+
+    // $this->saveExecData();
   }
 
   /**
@@ -25,10 +32,26 @@ class CreateJsonlAssetFile {
    */
   private function loopWikipediaFiles()
   {
-    $files = glob('../'.$this->wikiDirPath.'/*.{json}', GLOB_BRACE);
-    foreach($files as $file) {
-      $this->readWikiPage($file);
+    echo "getting all files\n";
+    // if(is_dir('../' . $this->wikiDirPath)) echo "Dir correct\n";
+    // else echo "no Dir \n";
+
+    if($handle = opendir('../' . $this->wikiDirPath)) {
+      // echo "Handle?\n";
+      while(false !== ($entry = readdir($handle))) {
+        // echo "What $entry\n";
+        $ext = strtolower(end(explode('.',$entry)));
+        if($ext == 'json') {
+          echo "$entry\n";
+        }
+      }
     }
+    // $files = glob('../'.$this->wikiDirPath.'/*.{json}', GLOB_BRACE);
+    // print_R($files);
+    // foreach($files as $file) {
+    //   echo "opening $file\n";
+    //   $this->readWikiPage($file);
+    // }
   }
 
   /**
@@ -39,6 +62,11 @@ class CreateJsonlAssetFile {
   {
     $json = file_get_contents($file);
     $data = json_decode($json,true);
+
+    if(empty($data['wikipedia_page']) && empty($data['itemDescription'])) {      
+      $this->peopleWithNoData++;
+      return;
+    }
 
     $person = $data['itemLabel'];
     $qid = str_replace('http://www.wikidata.org/entity/','',$data['wiki_id']);
@@ -72,7 +100,10 @@ class CreateJsonlAssetFile {
       $str = $value['response'][0];
       // clean string format
       $str = utf8_decode($str);
-      if(strlen($str) < 40) continue;
+      if(strlen($str) < 40) {
+        $this->unusableText++;
+        continue;
+      }
 
       // clean name in string
       $str = $this->cleanNameInString($str, $person);
@@ -80,9 +111,14 @@ class CreateJsonlAssetFile {
       // get name position
       $pos = $this->findPersonInText($str, $person);
 
-      if(empty($pos)) return;
+      if(empty($pos)) {
+        $this->unusableText++;
+        return;
+      }
 
       $this->createJsonStr($str, $pos, $qid, $person);
+
+      $this->usableData++;
     }
     // die();
   }
@@ -208,6 +244,17 @@ class CreateJsonlAssetFile {
       if(!empty($v))
         echo "$v\n";
     }
+  }
+
+  private function saveExecData()
+  {
+    $arr = [
+      'usableData' => $this->usableData,
+      'peopleWithNoData' => $this->peopleWithNoData,
+      'unusableText' => $this->unusableText
+    ];
+
+    file_put_contents('../assets/'. $this->resultsFile, json_encode($arr,JSON_PRETTY_PRINT));
   }
 }
 
