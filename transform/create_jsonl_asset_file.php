@@ -21,9 +21,9 @@ class CreateJsonlAssetFile {
     $this->loopWikipediaFiles();
 
     // echo "output data\n";
-    // $this->outputData();
+    $this->outputData();
 
-    // $this->saveExecData();
+    $this->saveExecData();
   }
 
   /**
@@ -32,17 +32,23 @@ class CreateJsonlAssetFile {
    */
   private function loopWikipediaFiles()
   {
-    echo "getting all files\n";
+    // echo "getting all files\n";
     // if(is_dir('../' . $this->wikiDirPath)) echo "Dir correct\n";
     // else echo "no Dir \n";
 
     if($handle = opendir('../' . $this->wikiDirPath)) {
       // echo "Handle?\n";
       while(false !== ($entry = readdir($handle))) {
+        
+        if($entry == '.' || $entry == '..') continue;
+
         // echo "What $entry\n";
-        $ext = strtolower(end(explode('.',$entry)));
+        $extParts = explode('.',$entry);
+        $ext = end($extParts);
+
         if($ext == 'json') {
-          echo "$entry\n";
+          // echo "$entry\n";
+          $this->readWikiPage('../' . $this->wikiDirPath . '/' . $entry);
         }
       }
     }
@@ -159,10 +165,12 @@ class CreateJsonlAssetFile {
   private function findPersonInText($str, $person)
   {
 
-    preg_match_all('/'.$person.'/', $str, $match, PREG_OFFSET_CAPTURE);
+    @preg_match_all('/'.$person.'/', $str, $match, PREG_OFFSET_CAPTURE);
 
     // TODO: what about variations, such as first name only
     $res = [];
+
+    if(empty($match[0])) return;
 
     foreach($match[0] AS $k => $m )
     {
@@ -194,8 +202,11 @@ class CreateJsonlAssetFile {
   private function cleanNameInString($str, $name)
   {
     // regex to get name
-    preg_match_all('/(.?)' . $name . '(.?)/', $str, $output_array);
+    @preg_match_all('/(.?)' . $name . '(.?)/', $str, $output_array);
 
+    if(!isset($output_array[1][0])) {
+      return;
+    }
     // get start part of regex
     $beginStrChar = $output_array[1][0];
     // get end part of regex
